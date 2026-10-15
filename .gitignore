@@ -1,0 +1,25 @@
+#This .gitignore file will contain all the things that git should NOT track in this project.
+
+# Virtual Environment
+venv/
+.venv/
+
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python & Compiled Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Airflow & Local Project Artifacts
+airflow.db
+unittests.cfg
+airflow.cfg
+logs/
+temp/
+/tmp/data/
