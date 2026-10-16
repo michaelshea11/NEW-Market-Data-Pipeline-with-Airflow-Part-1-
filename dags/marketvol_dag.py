@@ -1,14 +1,14 @@
-import pandas as pd
-import yfinance as yf
 import os
 from datetime import datetime, timedelta, date
 from airflow.decorators import dag, task
 from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
+import pandas as pd
+import yfinance as yf
 
 default_args = {
     'owner': 'Michael',
-    'start_date': datetime(2026, 10, 14),
+    'start_date': datetime(2026, 10, 16),
     'retries': 2,
     'retry_delay': timedelta(minutes=5),
 }
